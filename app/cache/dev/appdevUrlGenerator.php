@@ -30,6 +30,7 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
        'LamMdlBundle_formationsport' => true,
        'LamMdlBundle_contenuformationsport' => true,
        'LamMdlBundle_datesstagesport' => true,
+       'LamMdlBundle_inscription' => true,
     );
 
     /**
@@ -136,5 +137,10 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
     private function getLamMdlBundle_datesstagesportRouteInfo()
     {
         return array(array (  0 => 'num',), array (  '_controller' => 'Lam\\MdlBundle\\Controller\\FormationSportController::stageAction',  'num' => 1,), array (), array (  0 =>   array (    0 => 'variable',    1 => '/',    2 => '[^/]+?',    3 => 'num',  ),  1 =>   array (    0 => 'text',    1 => '/Mdl/datesstagesport',  ),));
+    }
+
+    private function getLamMdlBundle_inscriptionRouteInfo()
+    {
+        return array(array (), array (  '_controller' => 'Lam\\MdlBundle\\Controller\\InscriptionController::indexAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/Mdl/inscription/',  ),));
     }
 }

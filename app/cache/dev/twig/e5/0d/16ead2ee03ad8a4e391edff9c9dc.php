@@ -43,16 +43,16 @@ class __TwigTemplate_e50d16ead2ee03ad8a4e391edff9c9dc extends Twig_Template
 ";
         // line 13
         $this->displayBlock('nav', $context, $blocks);
-        // line 24
+        // line 25
         echo "</nav>
 
 
 
 <article>
 ";
-        // line 29
+        // line 30
         $this->displayBlock('body', $context, $blocks);
-        // line 33
+        // line 34
         echo "</article>
 
 
@@ -95,14 +95,18 @@ class __TwigTemplate_e50d16ead2ee03ad8a4e391edff9c9dc extends Twig_Template
         // line 21
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_formationsport"), "html", null, true);
         echo "\" >Les formations sport/médecine</a></li>
+        <li><a class='lien' href=\"";
+        // line 22
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_inscription"), "html", null, true);
+        echo "\" >Inscription à une formation</a></li>
 \t
 ";
     }
 
-    // line 29
+    // line 30
     public function block_body($context, array $blocks = array())
     {
-        // line 30
+        // line 31
         echo "
         
 ";
@@ -120,6 +124,6 @@ class __TwigTemplate_e50d16ead2ee03ad8a4e391edff9c9dc extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  104 => 30,  101 => 29,  94 => 21,  90 => 20,  86 => 19,  79 => 14,  76 => 13,  70 => 6,  54 => 33,  52 => 29,  45 => 24,  43 => 13,  35 => 8,  31 => 7,  27 => 6,  20 => 1,  29 => 4,  26 => 3,);
+        return array (  108 => 31,  105 => 30,  98 => 22,  94 => 21,  90 => 20,  86 => 19,  79 => 14,  76 => 13,  70 => 6,  54 => 34,  52 => 30,  45 => 25,  43 => 13,  35 => 8,  31 => 7,  27 => 6,  20 => 1,);
     }
 }

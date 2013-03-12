@@ -123,6 +123,14 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return array_merge($this->mergeDefaults($matches, array (  '_controller' => 'Lam\\MdlBundle\\Controller\\FormationSportController::stageAction',  'num' => 1,)), array('_route' => 'LamMdlBundle_datesstagesport'));
             }
 
+            // LamMdlBundle_inscription
+            if (rtrim($pathinfo, '/') === '/Mdl/inscription') {
+                if (substr($pathinfo, -1) !== '/') {
+                    return $this->redirect($pathinfo.'/', 'LamMdlBundle_inscription');
+                }
+                return array (  '_controller' => 'Lam\\MdlBundle\\Controller\\InscriptionController::indexAction',  '_route' => 'LamMdlBundle_inscription',);
+            }
+
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
