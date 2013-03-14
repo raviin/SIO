@@ -28,4 +28,4 @@ LamMdlBundle_datesstagesport:
     
 LamMdlBundle_inscription:
     pattern:  /inscription/
-    defaults: { _controller: LamMdlBundle:Inscription:index }
+    defaults: { _controller: LamMdlBundle:Form:ajout }

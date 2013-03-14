@@ -128,7 +128,7 @@ class appdevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 if (substr($pathinfo, -1) !== '/') {
                     return $this->redirect($pathinfo.'/', 'LamMdlBundle_inscription');
                 }
-                return array (  '_controller' => 'Lam\\MdlBundle\\Controller\\InscriptionController::indexAction',  '_route' => 'LamMdlBundle_inscription',);
+                return array (  '_controller' => 'Lam\\MdlBundle\\Controller\\FormController::ajoutAction',  '_route' => 'LamMdlBundle_inscription',);
             }
 
         }

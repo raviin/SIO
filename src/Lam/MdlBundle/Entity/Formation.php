@@ -76,10 +76,10 @@ class Formation
      */
     private $nbInscrit;
   /**
-* @ORM\ManyToMany(targetEntity="Lam\MdlBundle\Entity\Intervenant",
-cascade={"persist"})
-*/
-private $lesIntervenants;
+    * @ORM\ManyToMany(targetEntity="Lam\MdlBundle\Entity\Intervenant",
+    cascade={"persist"})
+    */
+    public $lesIntervenants;
 
   /**
      * @ORM\ManyToOne(targetEntity="Lam\MdlBundle\Entity\FormationSport")

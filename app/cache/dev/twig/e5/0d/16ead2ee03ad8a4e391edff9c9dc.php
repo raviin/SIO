@@ -43,16 +43,16 @@ class __TwigTemplate_e50d16ead2ee03ad8a4e391edff9c9dc extends Twig_Template
 ";
         // line 13
         $this->displayBlock('nav', $context, $blocks);
-        // line 25
+        // line 21
         echo "</nav>
 
 
 
 <article>
 ";
-        // line 30
+        // line 26
         $this->displayBlock('body', $context, $blocks);
-        // line 34
+        // line 30
         echo "</article>
 
 
@@ -79,34 +79,30 @@ class __TwigTemplate_e50d16ead2ee03ad8a4e391edff9c9dc extends Twig_Template
     {
         // line 14
         echo "        
-        
-        
-        
-        
         <ul><li><a class='lien' href=\"";
-        // line 19
+        // line 15
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_homepage"), "html", null, true);
         echo "\">Accueil</a></li>
 \t<li><a class='lien' href=\"";
-        // line 20
+        // line 16
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_formationinformatique"), "html", null, true);
         echo "\" >Les formations informatiques</a></li>
         <li><a class='lien' href=\"";
-        // line 21
+        // line 17
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_formationsport"), "html", null, true);
         echo "\" >Les formations sport/médecine</a></li>
         <li><a class='lien' href=\"";
-        // line 22
+        // line 18
         echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_inscription"), "html", null, true);
         echo "\" >Inscription à une formation</a></li>
 \t
 ";
     }
 
-    // line 30
+    // line 26
     public function block_body($context, array $blocks = array())
     {
-        // line 31
+        // line 27
         echo "
         
 ";
@@ -124,6 +120,6 @@ class __TwigTemplate_e50d16ead2ee03ad8a4e391edff9c9dc extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  108 => 31,  105 => 30,  98 => 22,  94 => 21,  90 => 20,  86 => 19,  79 => 14,  76 => 13,  70 => 6,  54 => 34,  52 => 30,  45 => 25,  43 => 13,  35 => 8,  31 => 7,  27 => 6,  20 => 1,);
+        return array (  104 => 27,  101 => 26,  94 => 18,  90 => 17,  86 => 16,  82 => 15,  79 => 14,  76 => 13,  70 => 6,  54 => 30,  52 => 26,  45 => 21,  43 => 13,  35 => 8,  31 => 7,  27 => 6,  20 => 1,);
     }
 }

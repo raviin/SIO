@@ -141,6 +141,6 @@ class appdevUrlGenerator extends Symfony\Component\Routing\Generator\UrlGenerato
 
     private function getLamMdlBundle_inscriptionRouteInfo()
     {
-        return array(array (), array (  '_controller' => 'Lam\\MdlBundle\\Controller\\InscriptionController::indexAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/Mdl/inscription/',  ),));
+        return array(array (), array (  '_controller' => 'Lam\\MdlBundle\\Controller\\FormController::ajoutAction',), array (), array (  0 =>   array (    0 => 'text',    1 => '/Mdl/inscription/',  ),));
     }
 }

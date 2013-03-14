@@ -29,8 +29,38 @@ class __TwigTemplate_fa27213c2778e601c94160b2d610c09d extends Twig_Template
     {
         // line 4
         echo "
-    <h1>Inscription à une formation</h1>
-    <p>Hello, World !</p>
+    ";
+        // line 5
+        if ($this->getContext($context, "message")) {
+            // line 6
+            echo "        <p>";
+            echo twig_escape_filter($this->env, $this->getContext($context, "message"), "html", null, true);
+            echo "</p>
+    ";
+        }
+        // line 8
+        echo "    <h1>Inscription à une nouvelle formation</h1>
+    <form action=\"";
+        // line 9
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_inscription"), "html", null, true);
+        echo "\" method=\"post\" ";
+        echo $this->env->getExtension('form')->renderEnctype($this->getContext($context, "form"));
+        echo ">
+        ";
+        // line 10
+        echo $this->env->getExtension('form')->renderWidget($this->getContext($context, "form"));
+        echo "
+        <p>
+            <button type=\"submit\">Ajout</button>
+        </p>
+    </form>
+
+    <p>
+        <a href=\"";
+        // line 17
+        echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("LamMdlBundle_homepage"), "html", null, true);
+        echo "\">Retour</a>
+    </p>
 
 ";
     }
@@ -47,6 +77,6 @@ class __TwigTemplate_fa27213c2778e601c94160b2d610c09d extends Twig_Template
 
     public function getDebugInfo()
     {
-        return array (  29 => 4,  26 => 3,);
+        return array (  59 => 17,  49 => 10,  43 => 9,  40 => 8,  34 => 6,  32 => 5,  29 => 4,  26 => 3,);
     }
 }

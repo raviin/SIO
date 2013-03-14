@@ -2,7 +2,19 @@
 
 {% block body %}
 
-    <h1>Inscription à une formation</h1>
-    <p>Hello, World !</p>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    <h1>Inscription à une nouvelle formation</h1>
+    <form action="{{ path('LamMdlBundle_inscription') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <p>
+            <button type="submit">Ajout</button>
+        </p>
+    </form>
+
+    <p>
+        <a href="{{ path('LamMdlBundle_homepage') }}">Retour</a>
+    </p>
 
 {% endblock %}
