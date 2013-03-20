@@ -9,6 +9,7 @@ class InscriptionController extends Controller
 {    
     public function indexAction()
     {
+        
         return $this->render('LamMdlBundle:Inscription:inscription.html.twig');
     }
 }
